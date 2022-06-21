@@ -1,38 +1,102 @@
-
-
 header {
-background-color: #EAC926;
+    background-color: #EAC926;
 }
-header, body, footer {
+
+header,
+body,
+footer {
     font-family: 'Roboto', sans-serif;
 }
+
 h2 {
     font-size: 24px;
 }
+
 .precios {
     font-size: 18px;
 }
-.descuentos, h3{
+
+.descuentos,
+h3 {
     font-size: 16px;
 }
+
 .cuerpo {
     font-size: 12px;
 }
+
 .menu {
     background-color: blue;
     color: white;
 }
+
 .burger-menu {
     padding-bottom: 15px;
     size: 2em;
 }
+
 footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 .icono {
     color: blue;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+}
+
+article {
+    margin: 10px 0;
+    padding: 15px;
+}
+
+h3.descripcion {
+    display: none;
+}
+nav {
+    display: none;
+}
+.linea {
+    border: solid 1px #ebebeb;
+    width: 100%;  
+    
+}
+section {
+    background-color: #ebebeb;
+    padding: 6px;
+    margin: 0 auto;
+}
+.div {
+    background-color: white;
+    padding: 15px;
+}
+
+@media(min-width: 361px) {
+    h3.descripcion {
+        display: initial;
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu {
+        display: none;
+    }
+    nav {
+        display: initial;
+    }
+}
+
+@media(min-width: 769px) {
+    
 }
