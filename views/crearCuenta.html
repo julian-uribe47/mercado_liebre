@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <script src="https://kit.fontawesome.com/7e4b430b7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <h3>Registro de usuario:</h3>
+        <input class="casillas" type="text" name="nombre" placeholder="Nombre y apellido" required>
+        <input class="casillas" type="text" name="usuario" placeholder="Nombre de usuario" required>
+        <input class="casillas" type="email" name="email" placeholder="E-mail" required>
+        <h3>Fecha de nacimiento:</h3>
+        <input class="casillas" type="date" name="fecha" placeholder="mm/dd/yyyy" min="1900-01-01" max="2200-01-01"
+            required>
+        <input class="casillas" type="text" name="direccion" placeholder="Dirección" required>
+        <h3>Perfil de usuario:</h3>
+        <div class="label">
+            <label><input style="margin-right: 10px;" type="radio" name="comprador-vendedor" value="comprador" required>
+                Comprador</label>
+            <label><input style="margin-left: 10px; margin-right: 10px;" type="radio" name="comprador-vendedor" value="vendedor" required>
+                Vendedor</label>
+        </div>
+
+        <h3>Intereses:</h3>
+
+        <div class="check">
+            <label for="electro">
+                <input style="margin-right: 15px;" id="electro" value="electro" type="checkbox" name="intereses">Electro</label><br>
+            <label for="moda">
+                <input style="margin-right: 15px;" id="moda" value="moda" type="checkbox" name="intereses">Moda</label><br>
+            <label for="hogar">
+                <input style="margin-right: 15px;" id="hogar" value="hogar" type="checkbox" name="intereses">Hogar</label><br>
+            <label for="jugueteria">
+                <input style="margin-right: 15px;" id="jugueteria" value="jugueteria" type="checkbox" name="intereses">Juguetería</label><br>
+            <label for="vida-sana">
+                <input style="margin-right: 15px;" id="vida-sana" value="vida-sana" type="checkbox" name="intereses">Vida sana</label><br>
+            <h3>Foto de usuario:</h3>
+            <input type="file" name="avatar" accept=".jpg, .png" multiple>
+        </div>
+
+
+        <h3>Crear contraseña:</h3>
+
+        <input class="casillas" type="password" name="contraseña" placeholder="Ingresa tu contraseña" required>
+        <input class="casillas" type="password" name="confirmar-contraseña" placeholder="Confirma tu contraseña" required>
+        <div class="enviar">
+            <a href='./'>
+                <input class="boton" type="submit" value="Enviar" required>
+            </a>
+            <button class="boton" type="reset">Limpiar</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

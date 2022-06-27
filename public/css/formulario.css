@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    width: 300px;
+    background: #ebebeb;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    margin-top: 30px;
+    font-family: 'Roboto';
+    box-shadow: 10px 10px 15px #1F2020;
+    
+}
+h3 {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+.casillas {
+    width: 90%;
+    padding: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: solid #ebebeb;
+    font-family: 'roboto';
+}
+.label {
+    margin-right: 15px;
+    margin-bottom: 20px;   
+}
+.check {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.enviar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.boton {
+    font-size: 16px;
+    background: #3361FF;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: none;
+    
+}
+.enviar2 {
+    width: 80%;
+    font-size: 16px;
+    background: #3361FF;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 25px 0;
+    
+}
